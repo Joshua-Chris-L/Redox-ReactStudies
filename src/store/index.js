@@ -4,12 +4,11 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 
 
-// const reducerFn = (state = { counter: 0}, action) => {
+const reducerFn = (state = { counter: 0}, action) => {
 
-//         return state;
+       return state;
+ }
 
-// }
+const store = configureStore({reducerFn});
 
-// const store = configureStore({reducerFn});
-
-// export default store;
+export default store;
